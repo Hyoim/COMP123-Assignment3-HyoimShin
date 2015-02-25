@@ -58,7 +58,7 @@ namespace HyoimShin_Assignment3
         {
             get
             {
-                return this._name;      // Read-Only
+                return this._name;         // Read-Only
             }
         }
 
@@ -101,7 +101,10 @@ namespace HyoimShin_Assignment3
         // PUBLIC METHOD +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public override string ToString()
         {
-            return this._name + "\n" + "Diameter : " + this._diameter + "\nMass : " + this._mass;
+            string _dia = this._diameter.ToString();
+            string _mass = this._mass.ToString();
+
+            return this._name + "\n" + "Diameter : " + _dia + "\nMass : " + _mass + "\n";
         }
     }
 }

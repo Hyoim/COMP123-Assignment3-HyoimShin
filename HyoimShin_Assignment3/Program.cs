@@ -30,7 +30,6 @@ namespace HyoimShin_Assignment3
 
         private static void waitForAnyKey()
         {
-            Console.Write("\n");
             Console.WriteLine("++++++++++++++++++++++++++");
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
