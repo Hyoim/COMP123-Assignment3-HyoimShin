@@ -101,7 +101,7 @@ namespace HyoimShin_Assignment3
         // PUBLIC METHOD +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public override string ToString()
         {
-            return this._name + "\n" + "Diameter : " + this._diameter + "Mass : " + this._mass;
+            return this._name + "\n" + "Diameter : " + this._diameter + "\nMass : " + this._mass;
         }
     }
 }
