@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace HyoimShin_Assignment3
 {
-    class Planet
+    abstract class Planet
     {
+        // PRIVATE INSTANCE VARIABLES ++++++++++++++++++++++++++++++++++++++++++++
         private double _diameter;
         private double _mass;
         private int _moonCount;
@@ -16,6 +17,7 @@ namespace HyoimShin_Assignment3
         private int _ringCount;
         private int _rotationPeriod;
 
+        // CONSTRUCTORS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public Planet(string name, double diameter, double mass)
         {
             this._name = name;
@@ -23,6 +25,7 @@ namespace HyoimShin_Assignment3
             this._mass = mass;
         }
 
+        // PROPERTIES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public double Diameter
         {
             get
@@ -95,6 +98,7 @@ namespace HyoimShin_Assignment3
             }
         }
 
+        // PUBLIC METHOD +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public override string ToString()
         {
             return this._name + "\n" + "Diameter : " + this._diameter + "Mass : " + this._mass;
